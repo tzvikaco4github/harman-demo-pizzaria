@@ -48,6 +48,8 @@ public class CacheConfiguration {
             createCache(cm, com.harman.demo.pizzaria.domain.User.class.getName());
             createCache(cm, com.harman.demo.pizzaria.domain.Authority.class.getName());
             createCache(cm, com.harman.demo.pizzaria.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.harman.demo.pizzaria.domain.Pizza.class.getName());
+            createCache(cm, com.harman.demo.pizzaria.domain.Topping.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
