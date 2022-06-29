@@ -1,0 +1,24 @@
+{
+  "changelogDate": "20220628160522",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "pizzaSize",
+      "fieldType": "PizzaSize",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "SMALL,MEDIUM,LARGE,EXTRA_LARGE"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "1"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Pizza",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
